@@ -13,7 +13,7 @@ classdef OfdmTransceiver
             % transforms matched complex signal in time domain to RG
             % starting at first sample of array
             samples=reshape(samples,symb_length,[]);
-            resGrid=fft(samples,symb_length);
+            resGrid=fft(samples);
             % fft works with columns
         end
     end
